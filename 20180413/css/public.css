@@ -1,0 +1,196 @@
+/* css reset */
+html,body,section,div,input,ul,li,article,aside,nav,button,p,
+h1,h2,h3,h4,h5{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+html,body{
+    /* user-select: none; */
+    font-family: '黑体', Arial;
+    font-size: 16px;
+    color: #333;
+    overflow: hidden;
+    background: url(../img/bodyBg.jpg) no-repeat;
+    background-size: 100%;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    color: rgb(98, 185, 153);
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.menu>*,.menu>a>*,.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.clear::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.wraLeft,.wraRight{
+    position: relative;
+}
+.wraLeft{
+    position: relative;
+    width: 400px;
+    height: 380px;
+    text-align: right;
+}
+.rightBottom,
+.rb{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.wraRight{
+    position: relative;
+    left: 20px;
+    width: 700px;
+    height: 380px;
+}
+.wraRight a{
+    color: #000;
+}
+.leftBottom,
+.lb{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.videoOff,
+.videoOff *{
+    background: rgb(98, 185, 153) !important;
+    color: #fff !important;
+}
+.Click{
+    cursor: pointer;
+}
+/* css reset */
+
+
+/* header */
+header{
+    position: relative;
+    margin: 0 auto;
+    width: 1100px;
+    height: 65vh;
+    min-height: 500px;
+    background: #fff;
+    overflow: hidden;
+}
+.wrapper{
+    margin: auto;
+    width: 1200px;
+    height: 65vh;
+    min-height: 500px;
+}
+.Page-wrap{
+    position: relative;
+    width: 750px;
+    height: 350px;
+    margin: 0 auto;
+    top: 40px;
+}
+/* header */
+
+
+/* footer */
+footer{
+    margin: 0 auto;
+    width: 1100px;
+    height: 30vh;
+    min-height: 230px;
+    background: rgb(98, 185, 153)
+}
+.logo{
+    padding-top: 35px;
+    margin-right: 13px;    
+    color: #fff;
+    font-size: 18px;
+    transform: scale(1.2);
+    text-align: right;
+}
+.logo img,.logo span{
+    vertical-align: middle;
+}
+.logo span{
+    letter-spacing: 5px;    
+}
+.logoWord{
+    font-size: 12px;
+    font-family: arial;
+    letter-spacing: 5px;
+    line-height: 35px;
+    transform: scale(1);
+}
+.logoSecond{
+    letter-spacing: 3px;
+}
+.logoSecond,.logoThird{
+    line-height: 20px;    
+}
+.logoCon span{
+    vertical-align: top;
+    transform: scale(.8);
+}
+nav{
+    margin-left: 20px;
+}
+.navMain li{
+    padding: 0 20px;
+    height: 30px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 30px;
+}
+.subMenu{
+    display: none;
+}
+.navMain li:hover,
+.subMenu{
+    background: rgb(79, 149, 123);
+}
+.list:hover{
+    padding: 0;
+    text-align: center;
+}
+.list:hover .subMenu{
+    display: block;
+}
+.subMenu li:hover{
+    background: rgb(89, 168, 139);
+}
+/* footer */
+
+
+footer .wraRight,
+footer .wraLeft{
+    min-height: 230px;
+    height: 230px;
+}
+.copy{
+    margin: 0 auto;
+    width: 1100px;
+    height: calc(100vh - 65vh - 30vh);
+    min-height: 38px;
+    color: #ccc;
+    line-height: 38px;
+    font-size: 12px;
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: 1px;
+    background: rgb(63, 112, 93);
+}
+/* footer */ 
